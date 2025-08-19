@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    color: white;
+}
+
+.linea{
+    height: 3px;
+    width: 70px;
+    margin-top: 5px;
+    background-color: white;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    
+
+}
+
+form{
+    width: 320px;
+    height: 320px;
+    padding: 38px 30px 40px 30px;
+    border-radius: 7px;
+    box-shadow: -1px 1px 30px 0px rgba(54, 53, 53, 0.119), inset 0.3px 0.3px 1px 0.5px rgb(216, 216, 216);
+    
+}
+
+
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 0 3px 7px 0px;
+    border: none;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    box-shadow:  0 3px 5px 0 rgb(174, 174, 174);;
+}
+
+button{
+    margin-top: 10px;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    border: none;
+    box-shadow: 0px 2px 5px 1px rgba(54, 53, 53, 0.077)
+}
+
+::placeholder{
+    
+    color: white;
+    font-weight: bold;
+}
+
+p,a{
+    color:white;
+    margin-top: 10px;
+}
+
+a{
+    font-weight: bold;
+}
+
+.parrafos{
+    margin-top: 20px;
+}
+
+.fondo{
+    position: fixed;
+    top: 0; /* AGREGADO */
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("fondo.avif");
+    background-size: cover; /* AGREGADO */
+    background-position: center; /* AGREGADO */
+    z-index: -2;
+    
+    
+}
+
+.overlay{
+    position: fixed;
+    top: 0; /* AGREGADO */
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(253, 100, 5, 0.446);
+    z-index: -1;
+}
+
+input{
+    background-color: rgba(216,216,216,0.4);
+    box-shadow: 0px 2px 5px 1px rgba(54, 53, 53, 0.077), inset 0.3px 0.3px 1px 0.5px rgb(216, 216, 216);
+    outline: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    caret-color: white;
+    font-weight: bold;
+    color: white;
+}

@@ -1,0 +1,293 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: aquamarine;
+}
+
+.imagenes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 380px;
+    
+}
+
+.imagenes_contenedor_imagen {
+    position: relative;
+    height: 400px;
+    width: 225px;
+    margin-top: 0;
+    transition: transform 0.3s ease;
+}
+
+
+.ampliar1{
+    height: 325px;
+    width: 325px;
+}
+
+.ampliar2{
+    width: 245px;
+    height: 300px;
+    margin-top: 30px;
+}    
+
+.ampliar3 {
+    width: 300px;
+    height: 450px;
+    margin-top: -35px;
+    
+}
+
+.ampliar4{
+    width: 250px;
+    height: 315px;
+    margin-top: 20px;
+}
+
+.ampliar5{
+    width: 200px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+
+.imagenes_contenedor_imagen:nth-child(3) {
+    position: relative;
+    left: 15px; /* mueve hacia la izquierda */
+    z-index: 2;  /* asegura que quede arriba */
+}
+
+.imagenes_contenedor_imagen:nth-child(4) {
+    position: relative; /* mueve hacia la izquierda */
+    z-index: 1;  /* asegura que quede arriba */
+}
+
+.imagenes_contenedor_imagen:nth-child(5) {
+    position: relative;
+    right: 15px; /* mueve hacia la izquierda */
+    z-index: 0;  /* asegura que quede arriba */
+}
+
+.imagenes_contenedor_imagen:hover {
+    z-index: 5;
+    transform: translateY(-100px);
+}
+
+/* reemplazar el bloque .texto-hover */
+.texto-hover {
+    position: absolute;
+    top: -120px;                      /* baja el cuadro para que quede más cerca de la imagen */
+    left: 50%;
+    transform: translateX(-50%) translateY(10px); /* estado inicial: levemente abajo */
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.9); /* fondo visible */
+    color: white;
+    padding: 18px 50px;               /* tamaño del cuadro */
+    transition: opacity 0.28s ease, transform 0.28s ease;
+    z-index: 10;                      /* encima del triángulo */
+    pointer-events: none;             /* no rompe el hover cuando aparecen */
+}
+
+/* reemplazar el bloque .triangulo */
+.triangulo {
+    position: absolute;
+    top: -70px;                       /* justo debajo del cuadro (ajustá +/- según padding) */
+    left: 50%;
+    transform: translateX(-50%) translateY(10px); /* estado inicial: levemente abajo */
+    opacity: 0;
+    width: 45px;
+    height: 50px;
+    transition: opacity 0.28s ease, transform 0.28s ease;
+    z-index: 9;                       /* debajo del texto */
+    pointer-events: none;
+}
+
+/* reemplazar las reglas hover del texto y del triángulo */
+.imagenes_contenedor_imagen:hover .texto-hover {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0); /* sube a su posición final */
+}
+
+.imagenes_contenedor_imagen:hover .triangulo {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0); /* sube también y queda pegado al cuadro */
+}
+
+
+.imagenes_contenedor_imagen:hover {
+    transform: translateY(-30px); /* sube un poco al hacer hover */
+    
+}
+
+
+@media screen and (max-width:1200px){
+    .imagenes_contenedor_imagen {
+    position: relative;
+    height: 220px;
+    width: 150px;
+    margin-top: 7.5%;
+    transition: none;
+    transform: none;
+    }
+
+
+
+    .ampliar1{
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+    }
+
+    .ampliar2{
+    width: 150px;
+    height: 185px;
+    margin-top: 30px;
+    }    
+
+    .ampliar3 {
+    width: 185px;
+    height: 278px;
+    margin-top: -15px;
+    
+    }
+
+    .ampliar4{
+    width: 154px;
+    height: 194px;
+    margin-top: 20px;
+    }
+
+    .ampliar5{
+    width: 123px;
+    height: 185px;
+    margin-left: 20px;
+    margin-top: 20px;
+    }
+
+
+    .texto-hover {
+    position: static; 
+    border-radius: 7px;
+    text-align: center;                    /* baja el cuadro para que quede más cerca de la imagen */
+    margin-left: 50%;
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 1;
+    background-color: rgba(0,0,0,0.9); /* fondo visible */
+    color: white;
+    padding: 20px 50px;         /* tamaño del cuadro */
+    z-index: 10;                      /* encima del triángulo */
+    transition: none;           /* no rompe el hover cuando aparecen */
+    }
+
+    .triangulo{
+        transition: none;
+    }
+    
+    span{
+        position: absolute;
+        bottom: 12px;
+        right: 15px;
+
+    }
+
+/* reemplazar el bloque .triangulo */
+    
+
+    .imagenes_contenedor_imagen:hover,
+    .imagenes_contenedor_imagen:hover .texto-hover,
+    .imagenes_contenedor_imagen:hover .triangulo {
+        transition: none;
+        transform: none !important;
+        opacity: 1 !important;
+        z-index: auto !important;
+    }
+}
+
+
+@media screen and (max-width:780px){
+    .imagenes{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+
+
+        
+    }
+
+    .imagenes_contenedor_imagen{
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        width: 300px;
+    }
+
+    .acercar{
+        margin-right: 30px;
+    }
+
+    .alejar{
+        margin-left: 15px;
+    }
+
+
+    .texto-hover{
+        position: absolute;
+        top: 60px;
+        left: 100px;
+    }
+
+    
+    .ampliar1{
+    height: 150px;
+    width: 140px;
+    margin-bottom: 50px;
+    
+    }
+
+    .ampliar2{
+    width: 105px;
+    height: 130px;
+    margin-bottom: 100px;
+    }    
+
+    .ampliar3 {
+    width: 150px;
+    height: 300px;
+    margin-top: 15px;
+    
+    }
+
+    .ampliar4{
+    width: 120px;
+    height: 136px;
+    margin-top: 20px;
+    }
+
+    .ampliar5{
+    width: 86px;
+    height: 130px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    }
+
+    svg{
+        display: none;
+    }
+
+}    

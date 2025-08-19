@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgb(213, 49, 181),rgb(238, 107, 107)) ;
+}
+
+.logo_nike{
+    position: absolute;
+    width: 130px;
+    height: 150px;
+    left: 8%;
+    top: -10px;
+}
+
+.svgmenu{
+    position: absolute;
+    right: 5%;
+    top: 10px;
+}
+
+.zoomx{
+    position: absolute;
+    opacity: 0.05;
+    top: 60%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+    font-size: 22.5vw;
+    
+}
+
+.nike_proy{
+    position: absolute;
+    z-index: 2;
+    width: 45vw;
+    height: 45vw;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    
+    
+}
+
+
+.textos_boton{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 400px;
+    height: 245px;
+    gap: 10px;
+    left: 8%;
+    bottom: 70px;
+
+}
+
+h2{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 2px;
+    
+}
+
+.parrafo{
+    width: 600px;
+    color: white;
+    font-size: 21px;
+}
+
+.boton{
+    
+    width: 115px;
+    height: 40px;
+    border: none;
+
+}
+
+.iglogo{
+    width: 25px;
+    height: 25px;
+
+}
+
+.enlaces{
+    display: flex;
+    position: absolute;
+    z-index: 4;
+    flex-direction: column;
+    bottom: 70px;
+    gap: 2px;
+    right: 8%;
+
+
+}
+
+@media screen and (max-width: 1024px){
+    .nike_proy{
+        width: 60vw;
+        height: 60vw;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .nike_proy{
+        width: 75vw;
+        height: 75vw;
+    }
+}
+
+
+@media screen and (max-width: 790px){
+    .nike_proy{
+        width: 75vw;
+        height: 75vw;
+    }
+
+    .parrafo{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .zoomx{
+        top: 55%;
+    }
+}
+
+@media screen and (max-width: 515px){
+    .textos_boton{
+        width: 300px;
+    }
+
+
+    h2{
+    font-size: 30px;
+    
+    }
+
+    .parrafo{
+        width: 300px;
+        font-size: 20px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 515px) {
+    .enlaces{
+        flex-direction: row;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .textos_boton{
+        text-align: center;
+        align-items: center;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 120px;
+    }
+
+    .zoomx{
+        top:53%
+    }
+
+    .svgmenu{
+        width: 60px;
+        height: 60px;
+    }
+
+    .logo_nike{
+        width: 80px;
+        height: 100px;
+        
+    }
+
+
+    .nike_proy{
+        top: 40%;
+    }
+
+    .zoomx{
+        top: 48%;
+    }
+
+}
+
+
+@media screen and (max-width: 515px) and (max-height: 750px) {
+    .nike_proy{
+        top: 35%;
+    }
+
+    .zoomx{
+        top: 43%;
+    }
+
+}    
+
+
+
+
+
+
+
+
+
+
+
