@@ -1,18 +1,19 @@
 Enlaces a mas proyectos:
 
 
-Proyectos HTML_CSS/proy login glass/login.html
+https://github.com/Ferjud/Ferjud.github.io/blob/main/Proyectos%20HTML_CSS/proy%20login%20glass/login.html
 
-Proyectos HTML_CSS/proy 3/proy3.html
+https://github.com/Ferjud/Ferjud.github.io/blob/main/Proyectos%20HTML_CSS/proy%203/proy3.html
 
-Proyectos HTML_CSS/proy nike/proy_nike.html
+https://github.com/Ferjud/Ferjud.github.io/blob/main/Proyectos%20HTML_CSS/proy%20nike/proy_nike.html
 
-Proyectos HTML_CSS/proy scroll/proy_scroll.html
+https://github.com/Ferjud/Ferjud.github.io/blob/main/Proyectos%20HTML_CSS/proy%20scroll/proy_scroll.html
 
-Proyectos HTML_CSS/proy1/proyecto1.html
+https://github.com/Ferjud/Ferjud.github.io/blob/main/Proyectos%20HTML_CSS/proy1/proyecto1.html
 
-Proyectos HTML_CSS/proy2/proyecto 2b.html
+https://github.com/Ferjud/Ferjud.github.io/blob/main/Proyectos%20HTML_CSS/proy2/proyecto%202b.html
 
-Proyectos HTML_CSS/proy4/proy4.html
+https://github.com/Ferjud/Ferjud.github.io/blob/main/Proyectos%20HTML_CSS/proy4/proy4.html
 
-Proyectos HTML_CSS/proy6 menu_animado/proy6.html
+https://github.com/Ferjud/Ferjud.github.io/blob/main/Proyectos%20HTML_CSS/proy6%20menu_animado/proy6.html
+
