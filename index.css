@@ -133,8 +133,8 @@ p{
 .profile__skills-container {
         display: flex;
         flex-direction: column;
-        align-items: center;   /* centra horizontal */
-        margin-top: 3%;      /* asegura centrado dentro del data-container */
+        align-items: center;   
+        margin-top: 3%;      
         width: 100%;
     }    
 
@@ -257,6 +257,9 @@ p{
     animation: aparecer both;
     animation-timeline: view();
     animation-range: cover 20% contain 50%;
+    text-decoration: none;  
+    color: inherit;         
+    cursor: pointer;
 }
 
 .HTML{
@@ -292,11 +295,11 @@ p{
 @container portfolio (min-width: 56.25rem) {
     .portfolio__project-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
-        gap: 20px; /* opcional, separación entre cuadrados */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; 
     }
 
-    /* Cada proyecto ocupa 1 celda, no hace falta span */
+   
     .portfolio__project {
         grid-column: auto;
         grid-row: auto;
@@ -400,7 +403,7 @@ footer {
     font-weight: bold;
 }
 
-
+/*------MEDIA QUERIES-----*/
 
 @media screen and (max-width: 1100px){
     .contact__data-container{
@@ -490,6 +493,7 @@ footer {
         font-size: 13px;
     }
 }
+
 
 
 
